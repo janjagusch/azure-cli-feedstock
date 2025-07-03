@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: azure-cli
-  version: "2.74.0"
+  version: "2.75.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/azure_cli-${{ version }}.tar.gz
-  sha256: 28b938246f0a2099e378c60ea22e2931fec2226f3f44e2a98b1895521b85540a
+  sha256: c987d2155ea226693db0b37d795bafb3c147cc1a05fc5ce611372cb9b293e673
 
 build:
   number: 0
@@ -25,12 +25,12 @@ requirements:
   run:
     - python >=${{ python_min }}
     - antlr4-python3-runtime >=4.13.1,<4.14.dev0
-    - azure-appconfiguration >=1.7.0,<1.8.dev0
+    - azure-appconfiguration >=1.7.1,<1.8.dev0
     - azure-batch >=15.0.0b1,<15.1.dev0
     - azure-cli-core ==${{ version }}
     - azure-cosmos >=3.0,<4.dev0,>=3.0.2
     - azure-data-tables ==12.4.0
-    - azure-datalake-store >=1.0.0a0,<1.1.dev0
+    - azure-datalake-store >=1.0.1
     - azure-keyvault-administration ==4.4.0b2
     - azure-keyvault-certificates ==4.7.0
     - azure-keyvault-keys ==4.11.0b1
@@ -50,8 +50,8 @@ requirements:
     - azure-mgmt-cognitiveservices >=13.5.0,<13.6.dev0
     - azure-mgmt-compute >=34.1.0,<34.2.dev0
     - azure-mgmt-containerinstance ==10.2.0b1
-    - azure-mgmt-containerregistry ==14.0.0
-    - azure-mgmt-containerservice >=36.0.0,<37.0.dev0
+    - azure-mgmt-containerregistry ==14.1.0b1
+    - azure-mgmt-containerservice >=37.0.0,<38.0.dev0
     - azure-mgmt-cosmosdb ==9.8.0
     - azure-mgmt-databoxedge >=1.0.0,<1.1.dev0
     - azure-mgmt-datalake-store >=1.1.0b1,<1.2.dev0
@@ -80,7 +80,7 @@ requirements:
     - azure-mgmt-rdbms ==10.2.0b17
     - azure-mgmt-mysqlflexibleservers ==1.0.0b3
     - azure-mgmt-recoveryservicesbackup >=9.2.0,<9.3.dev0
-    - azure-mgmt-recoveryservices >=3.0.0,<3.1.dev0
+    - azure-mgmt-recoveryservices >=3.1.0,<3.1.dev0
     - azure-mgmt-redhatopenshift >=1.5.0,<1.6.dev0
     - azure-mgmt-redis >=14.5.0,<14.6.dev0
     - azure-mgmt-resource ==23.3.0
@@ -98,7 +98,7 @@ requirements:
     - azure-mgmt-trafficmanager >=1.0.0,<1.1.dev0
     - azure-mgmt-web ==7.3.1
     - azure-monitor-query ==1.2.0
-    - azure-multiapi-storage ==1.4.0
+    - azure-multiapi-storage ==1.4.1
     - azure-storage-common >=1.4,<2.dev0
     - azure-synapse-accesscontrol >=0.5.0,<0.6.dev0
     - azure-synapse-artifacts >=0.20.0,<0.21.dev0
